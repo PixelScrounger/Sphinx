@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>lg-Cog-cogwheel-gear-Zahnrad.png</file>
+        <file>logo3.jpg</file>
+    </qresource>
+</RCC>

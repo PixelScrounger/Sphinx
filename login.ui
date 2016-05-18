@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>111111</width>
+    <height>1111111</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Логін</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;
+</string>
+  </property>
+  <widget class="QLineEdit" name="login">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>94</y>
+     <width>459</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>146</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F7F7F7;
+color: #777E83;
+selection-background-color: rgb(119, 126, 131);
+selection-color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 2px;
+border-radius: 10px;
+border-color: #2A98F1;
+min-width: 10em;
+padding: 6px;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Логін:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwd">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>196</y>
+     <width>459</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>146</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F7F7F7;
+color: #777E83;
+selection-background-color: rgb(119, 126, 131);
+selection-color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 2px;
+border-radius: 10px;
+border-color: #2A98F1;
+min-width: 10em;
+padding: 6px;</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Пароль:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="checkButton">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>291</y>
+     <width>380</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1111111</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Відкрити програму</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>418</x>
+     <y>10</y>
+     <width>46</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gadugi</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background-color: #d42b2b;
+	color: #F3F3F3;
+	border: 1px solid transparent;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border: 1px solid transparent;
+}
+QPushButton:pressed {
+	background-color: #ab2222;
+	color: #fefefe;
+	border: 1px solid transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dbButton">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>291</y>
+     <width>75</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>75</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>75</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	border-image: url(:/lg-Cog-cogwheel-gear-Zahnrad.png) 0 0 0 0 stretch stretch;
+	border-style: inset;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	border-image: url(:/lg-Cog-cogwheel-gear-Zahnrad.png) 0 0 0 0 stretch stretch;
+	color: #F3F3F3;
+	border-style: outset;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	border-image: url(:/lg-Cog-cogwheel-gear-Zahnrad.png) 0 0 0 0 stretch stretch;
+	border-style: inset;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>169</x>
+     <y>36</y>
+     <width>181</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #2A98F1;</string>
+   </property>
+   <property name="text">
+    <string>Авторизація:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

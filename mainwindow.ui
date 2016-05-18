@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Головне вікно</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	 background-color: #ffffff;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="themesButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>143</y>
+      <width>225</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Список тем</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="adminButton">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>525</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Адміністрування</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="questionsButton">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>143</y>
+      <width>225</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Список питань</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="questionaryListButton">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>233</y>
+      <width>300</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Список тестувальників</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>11</y>
+      <width>46</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gadugi</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #d42b2b;
+	color: #F3F3F3;
+	border: 1px solid transparent;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border: 1px solid transparent;
+}
+QPushButton:pressed {
+	background-color: #ab2222;
+	color: #fefefe;
+	border: 1px solid transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openLoginButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>525</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Вийти</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addQuestionaryButton">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>330</y>
+      <width>300</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Додати тестувальник</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scanButton">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>425</y>
+      <width>300</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Перейти до сканування</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutButton">
+    <property name="geometry">
+     <rect>
+      <x>214</x>
+      <y>525</y>
+      <width>116</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #4BB2FF;
+	color: #EFEFEF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton {
+	background-color: #2A98F1;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:pressed {
+	background-color: #258bd9;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+QPushButton:!enabled {
+	background-color: #f7f7f7;
+	color: #5a5a5a;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #d6d6d6;
+	padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Про програму</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearPath">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>450</y>
+      <width>26</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gadugi</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+	background-color: #ef4949;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 7px;
+	border-color: transparent;
+}
+QPushButton {
+	background-color: #d42b2b;
+	color: #F3F3F3;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 7px;
+	border-color: transparent;
+}
+QPushButton:pressed {
+	background-color: #ab2222;
+	color: #fefefe;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 7px;
+	border-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>45</y>
+      <width>300</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/logo3.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
