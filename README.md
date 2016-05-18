@@ -1,3 +1,4 @@
 # Sphinx
 Program for knowledge testing
-testsss
+
+For buld you need to have Qt 5.1 or above, installed OpenCV library, and also few other libraries (libZBar and QREncode for QT).
